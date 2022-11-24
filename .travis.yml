@@ -1,12 +1,15 @@
+
   - docker build collinsoden/udagram-api-feed:v1
   - docker build collinsoden/udagram-api-user:v1
   - docker build collinsoden/udagram-frontend:v1
   - docker build collinsoden/udagram-reverseproxy:v1
   
+
   - docker tag collinsoden/udagram-api-feed:v1
   - docker tag collinsoden/udagram-api-user:v1
   - docker tag collinsoden/udagram-frontend:v1
   - docker tag collinsoden/udagram-reverseproxy:v1
+
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
  
