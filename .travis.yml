@@ -8,7 +8,7 @@
   - docker tag collinsoden/udagram-frontend:v1
   - docker tag collinsoden/udagram-reverseproxy:v1
 
- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
  
   - docker push collinsoden/udagram-api-feed:v1
   - docker push collinsoden/udagram-api-user:v1
